@@ -1,0 +1,86 @@
+Model: Projection
+Table Name: projections
+Fields: id,srid,proj4_params,extent,created_at,updated_at
+Create json file: php artisan resource-file:create Projection --fields=id,srid,proj4_params,extent,created_at,updated_at --translation-for=en,vi
+
+
+Model: Map
+Table Name: maps
+Fields: id,map_name,map_title,map_abstract,extent_minx,extent_miny,extent_maxx,extent_maxy,status,unit,size_x,size_y,proj_id,web_minscale,web_maxscale,created_at,updated_at,delete_at
+Create json file: php artisan resource-file:create Map --fields=id,map_name,map_title,map_abstract,extent_minx,extent_miny,extent_maxx,extent_maxy,status,unit,size_x,size_y,proj_id,web_minscale,web_maxscale,created_at,updated_at,delete_at --translation-for=en,vi
+
+
+Model: LayerGroup
+Table Name: layer_groups
+Fields: id,map_id,group_name,description,created_at,updated_at,delete_at
+Create json file: php artisan resource-file:create LayerGroup --fields=id,map_id,group_name,description,created_at,updated_at,delete_at --translation-for=en,vi
+
+
+Model: Ollayer
+Table Name: ollayers
+Fields: id,map_id,group_id,layer_name,layer_title,description,opacity,source,visible,minxextent,minyextent,maxxextent,maxyextent,zindex,minresolution,maxresolution,created_at,updated_at,delete_at
+Create json file: php artisan resource-file:create Ollayer --fields=id,map_id,group_id,layer_name,layer_title,description,opacity,source,visible,minxextent,minyextent,maxxextent,maxyextent,zindex,minresolution,maxresolution,created_at,updated_at,delete_at --translation-for=en,vi
+
+
+Model: Article
+Table Name: articles
+Fields:id,author,category_id,title,seo_title,excerpt,content,image,slug,meta_description,meta_keywords,article_status,featured,created_at,updated_at,delete_at
+Create json file: php artisan resource-file:create Article --fields=id,author,category_id,title,seo_title,excerpt,content,image,slug,meta_description,meta_keywords,status,featured,created_at,updated_at,delete_at --translation-for=en,vi
+status::text = ANY (ARRAY['PUBLISHED'::character varying, 'DRAFT'::character varying, 'PENDING'::character varying]::text[])
+
+
+Model: Category
+Table Name: categories
+Field: id,name,slug,parent_id,cat_order,created_at,updated_at
+Create json file: php artisan resource-file:create Category --fields=id,name,slug,parent_id,cat_order,created_at,updated_at --translation-for=en,vi
+
+Model: User
+Table Name: users
+Field: id,name,email,password,remember_token,created_at,updated_at,avatar,role_id
+Create json file: php artisan resource-file:create User --fields=id,name,email,password,remember_token,created_at,updated_at,avatar,role_id --translation-for=en,vi
+
+Model: Role
+Table Name: roles
+Field: id,name,guard_name,created_at,updated_at
+Create json file: php artisan resource-file:create Role --fields=id,name,guard_name,created_at,updated_at --translation-for=en,vi
+
+Model: Permission
+Table Name: permissions
+Field: id,name,guard_name,created_at,updated_at
+Create json file: php artisan resource-file:create Permission --fields=id,name,guard_name,created_at,updated_at --translation-for=en,vi
+
+Model:  SurfacewaterStation
+Table Name: surfacewater_station
+Field: gid,matram,tentram,tensong,luuvucsong,xa,huyen,tinh,toadox,toadoy,dientichtn,thongsoqt,geom,ngayqt,capquanly,mota,docaoz
+Create json file: php artisan resource-file:create SurfacewaterStation --fields=gid,matram,tentram,tensong,luuvucsong,xa,huyen,tinh,toadox,toadoy,dientichtn,thongsoqt,geom,ngayqt,capquanly,mota,docaoz --translation-for=en,vi
+
+Model:  Tramdomua
+Table Name: tramdomua
+Field: gid,tt,tentram,diadanh,x,y,geom,tinh,huyen,xa,ghichu,sohieu,mota
+Create json file: php artisan resource-file:create Tramdomua --fields=gid,tt,tentram,diadanh,x,y,geom,tinh,huyen,xa,ghichu,sohieu,mota --translation-for=en,vi
+
+Model:  GwExploitation
+Table Name: hientrangktndd
+Field: id_hientrang,sohieu_kt,chusohuu,toado_x,toado_y,caodo_z,tinh,huyen,xa,thon,nam_kt,cqcapphep,chieusaugieng,duongkinhgieng,tangchuanuoc,luuluong_kt,chedo_kt,mucdich_sd,geom
+Create json file: php artisan resource-file:create GwExploitation --fields=id_hientrang,sohieu_kt,chusohuu,toado_x,toado_y,caodo_z,tinh,huyen,xa,thon,nam_kt,cqcapphep,chieusaugieng,duongkinhgieng,tangchuanuoc,luuluong_kt,chedo_kt,mucdich_sd,geom --translation-for=en,vi
+
+Model:  HyExploitation
+Table Name: hydrology_station
+Field: gid,matram,tentram,diadanh,tensong,loaitram,qtmthienco,qtmtquyhoach,tnnlongghep,daco,nangcap,xaymoi,tentinh,geom
+Create json file: php artisan resource-file:create HyExploitation --fields=gid,matram,tentram,diadanh,tensong,loaitram,qtmthienco,qtmtquyhoach,tnnlongghep,daco,nangcap,xaymoi,tentinh,geom --translation-for=en,vi
+
+Model:  WasteWater
+Table Name: xathai
+Field: xt_id,id_dks,tennguonthai,luuluong,xt_tructiep,xt_daxuly,noitiepnhan,dotrong,mau,mui,loaihinh,sohieu_dks,geom
+Create json file: php artisan resource-file:create WasteWater --fields=xt_id,id_dks,tennguonthai,luuluong,xt_tructiep,xt_daxuly,noitiepnhan,dotrong,mau,mui,loaihinh,sohieu_dks,geom --translation-for=en,vi
+
+php artisan create:resources [model-name]
+
+Possibles values of type are: 
+"boolean" or "bool" 
+"integer" or "int" 
+"float" or "double" 
+"string" 
+"array" 
+"object" 
+"null" 

@@ -1,0 +1,32 @@
+<?php
+
+return [
+    'id' => 'Id',
+    'id__placeholder' => 'Enter id here...',
+    'map_id' => 'Map',
+    'map_id__placeholder' => 'Select map',
+    'group_name' => 'Group Name',
+    'group_name__placeholder' => 'Enter group name here...',
+    'description' => 'Description',
+    'created_at' => 'Created At',
+    'created_at__placeholder' => 'Enter created at here...',
+    'updated_at' => 'Updated At',
+    'updated_at__placeholder' => 'Enter updated at here...',
+    'delete_at' => 'Delete At',
+    'delete_at__placeholder' => 'Enter delete at here...',
+    'create' => 'Create New Layer Group',
+    'delete' => 'Delete Layer Group',
+    'edit' => 'Edit Layer Group',
+    'show' => 'Show Layer Group',
+    'show_all' => 'Show All Layer Group',
+    'add' => 'Add',
+    'update' => 'Update',
+    'confirm_delete' => 'Delete Layer Group?',
+    'none_available' => 'No Layer Groups Available!',
+    'model_plural' => 'Layer Groups',
+    'model_was_added' => 'Layer Group was successfully added!',
+    'model_was_updated' => 'Layer Group was successfully updated!',
+    'model_was_deleted' => 'Layer Group was successfully deleted!',
+    'unexpected_error' => 'Unexpected error occurred while trying to process your request!',
+
+];

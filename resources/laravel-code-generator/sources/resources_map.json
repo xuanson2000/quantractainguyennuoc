@@ -1,0 +1,46 @@
+[
+    {
+        "model-name": "Role",
+        "resource-file": "roles.json"
+    },
+    {
+        "model-name": "Permission",
+        "resource-file": "permissions.json"
+    },
+    {
+        "model-name": "User",
+        "resource-file": "users.json"
+    },
+    {
+        "model-name": "MonitoringNetwork",
+        "resource-file": "monitoring_networks.json"
+    },
+    {
+        "model-name": "RiverBasin",
+        "resource-file": "river_basins.json"
+    },
+    {
+        "model-name": "Monitoring_line",
+        "resource-file": "monitoring_lines.json"
+    },
+    {
+        "model-name": "SurfacewaterStation",
+        "resource-file": "surfacewater_stations.json"
+    },
+    {
+        "model-name": "Tramdomua",
+        "resource-file": "tramdomuas.json"
+    },
+    {
+        "model-name": "GwExploitation",
+        "resource-file": "gw_exploitations.json"
+    },
+    {
+        "model-name": "HyExploitation",
+        "resource-file": "hy_exploitations.json"
+    },
+    {
+        "model-name": "WasteWater",
+        "resource-file": "waste_waters.json"
+    }
+]

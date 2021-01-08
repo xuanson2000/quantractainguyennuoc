@@ -1,0 +1,31 @@
+<?php
+
+return [
+    'id' => 'Id',
+    'id__placeholder' => 'Enter id here...',
+    'srid' => 'Srid',
+    'srid__placeholder' => 'Enter srid here...',
+    'proj4_params' => 'Proj4 Params',
+    'proj4_params__placeholder' => 'Enter proj4 params here...',
+    'extent' => 'Extent',
+    'extent__placeholder' => 'Enter extent here...',
+    'created_at' => 'Created At',
+    'created_at__placeholder' => 'Enter created at here...',
+    'updated_at' => 'Updated At',
+    'updated_at__placeholder' => 'Enter updated at here...',
+    'create' => 'Create New Projection',
+    'delete' => 'Delete Projection',
+    'edit' => 'Edit Projection',
+    'show' => 'Show Projection',
+    'show_all' => 'Show All Projection',
+    'add' => 'Add',
+    'update' => 'Update',
+    'confirm_delete' => 'Delete Projection?',
+    'none_available' => 'No Projections Available!',
+    'model_plural' => 'Projections',
+    'model_was_added' => 'Projection was successfully added!',
+    'model_was_updated' => 'Projection was successfully updated!',
+    'model_was_deleted' => 'Projection was successfully deleted!',
+    'unexpected_error' => 'Unexpected error occurred while trying to process your request!',
+
+];

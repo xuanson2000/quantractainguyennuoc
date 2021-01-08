@@ -1,0 +1,33 @@
+<?php
+
+return [
+    'id' => 'Id',
+    'id__placeholder' => 'Enter id here...',
+    'name' => 'Name',
+    'name__placeholder' => 'Enter name here...',
+    'slug' => 'Slug',
+    'slug__placeholder' => 'Enter slug here...',
+    'parent_id' => 'Parent',
+    'parent_id__placeholder' => 'Select parent category',
+    'cat_order' => 'Cat Order',
+    'cat_order__placeholder' => 'Enter cat order here...',
+    'created_at' => 'Created At',
+    'created_at__placeholder' => 'Enter created at here...',
+    'updated_at' => 'Updated At',
+    'updated_at__placeholder' => 'Enter updated at here...',
+    'create' => 'Create New Category',
+    'delete' => 'Delete Category',
+    'edit' => 'Edit Category',
+    'show' => 'Show Category',
+    'show_all' => 'Show All Category',
+    'add' => 'Add',
+    'update' => 'Update',
+    'confirm_delete' => 'Delete Category?',
+    'none_available' => 'No Categories Available!',
+    'model_plural' => 'Categories',
+    'model_was_added' => 'Category was successfully added!',
+    'model_was_updated' => 'Category was successfully updated!',
+    'model_was_deleted' => 'Category was successfully deleted!',
+    'unexpected_error' => 'Unexpected error occurred while trying to process your request!',
+
+];
